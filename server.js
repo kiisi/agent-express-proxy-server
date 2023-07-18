@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (request, response) => {
-    res.send('Welcome to Agent Express proxy server!')
+    response.send('Welcome to Agent Express proxy server!')
 })
 
 app.post('/comment/:id', async (request, response) => {
