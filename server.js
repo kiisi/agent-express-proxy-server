@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 const app = express()
 
 const corsOption = {
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5173', 'https://agent-express.vercel.app'],
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOption))
